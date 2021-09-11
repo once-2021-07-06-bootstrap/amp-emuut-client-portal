@@ -526,43 +526,71 @@
                         <li class="dropdown-submenu">
                             <a class="dropdown-item" href="#">37" x 49" x 97" Untrimmed Block</a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type XI (071-00, 8psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type I (101-00, 10psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type I (101-25, 10psi, up to
-                                        25% recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type VIII (121-00, 13psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type VIII (121-15, 130psi,
-                                        up to 15% recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type II (151-00, 15psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type II (151-15, 15psi, up
-                                        to 15% recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type IX (201-00, 25psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type IX (201-15, 25psi, up
-                                        to 25% recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type XIV (251-00, 40psi, no
-                                        recycle content)</a></li>
-                                <li class="dropdown-item"><a class="dropdown-item" href="#">Type XV (351-00, 60psi, no
-                                        recycle content)</a></li>
+                                <li class="dropdown-item"><a href="#">Type XI (071-00, 8psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Type I (101-00, 10psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Type I (101-25, 10psi, up to 25% recycle
+                                        content)</a></li>
+                                <li class="dropdown-item"><a href="#">Type VIII (121-00, 13psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Type VIII (121-15, 130psi, up to 15% recycle
+                                        content)</a></li>
+                                <li class="dropdown-item"><a href="#">Type II (151-00, 15psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Type II (151-15, 15psi, up to 15% recycle
+                                        content)</a></li>
+                                <li class="dropdown-item"><a href="#">Type IX (201-00, 25psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#">Type IX (201-15, 25psi, up to 15% recycle
+                                        content)</a></li>
+                                <li class="dropdown-item"><a href="#">Type XIV (251-00, 40psi, no recycle content)</a>
+                                </li>
+                                <li class="dropdown-item"><a href="#" tabindex="-1" data-toggle="modal" data-target="#block351-00Modal">Type XV (351-00, 60psi, no recycle content)</a>
+                                </li>
                             </ul>
                         </li>
+                        <!-- Block/Sheet custom size trigger-->
                         <li class="dropdown-submenu">
-                            <a class="dropdown-item" href="#">Custom Sizes</a>
-                        </li>
-                    </ul>
+                        <li class="dropdown-item" tabindex="-1" href="#" data-toggle="modal"
+                            data-target="#blockCustomModal">Custom Block / Sheet Sizes</li>
                 </li>
-                <!-- Start Geofoam Modal-->
-                <li class="dropdown-submenu">
-                    <a class="dropdown-item" tabindex="-1" href="#" data-toggle="modal" data-target="
-                        #geofoamModal">Geofoam Lightweight Fill</a>
-                </li>
+            </ul>
+            </li>
+            <!-- Geofoam Modal Trigger-->
+            <li class="dropdown-submenu">
+                <li class="dropdown-item" tabindex="-1" href="#" data-toggle="modal" data-target="
+                        #geofoamModal">Geofoam Lightweight Fill</li>
+            </li>
             </ul>
         </div>
     </div>
+
+<div id="block351-00Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <div class="modal-title">37" x 49" x 97" Type XV (351-00) Untrimmed Block Request</div>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <form id="block351-00Form">
+                        <div class="form-row">
+                            <div class="form-group row">
+                                <!-- <label class="sr-only" for="geoQuantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1"
+                                    placeholder="Quantity in pieces" required> -->
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Geofoam modal start-->
     <div id="geofoamModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -607,7 +635,8 @@
                                 <div class="form-group col-4">
                                     <label class="sr-only" for="geoThickness">Thickness</label>
                                     <input type="number" class="form-control form-control-sm" id="geoThickness"
-                                        min="0.5" max="37" placeholder="Thickness (0.5&quot; to 37&quot; untrimmed)" required>
+                                        min="0.5" max="37" placeholder="Thickness (0.5&quot; to 37&quot; untrimmed)"
+                                        required>
                                 </div>
                                 <div class="form-group col-4">
                                     <label class="sr-only" for="geoWidth">Width</label>
@@ -625,7 +654,8 @@
                             <div class="form-row">
                                 <div class="from-group col-4">
                                     <label class="sr-only" for="geoQuantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1" placeholder="Quantity in pieces" required>
+                                    <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1"
+                                        placeholder="Quantity in pieces" required>
                                 </div>
                                 <p>This product is packaged in units of <span>36/geoThickness</span>.</p>
                             </div>
@@ -635,7 +665,92 @@
             </div>
         </div>
     </div>
+    <!-- Geofoam Modal end-->
 
+    <!-- Block Custom Size modal start-->
+    <div id="blockCustomModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <div class="modal-title">Custom Block/Sheet Request</div>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form id="blockSheetForm">
+                            <div class="form-row">
+                                <div class="form-group row">
+                                    <label class="sr-only">Density</label>
+                                    <div class="col">
+                                        <select name="geoDensity" class="form-control" id="blockSheetDensity" required>
+                                            <option selected>Choose your density, Luke.</option>
+                                            <option value="1">Type XI (071-00, 8psi, no recycle content)</option>
+                                            <option value="2">Type I (101-00, 10psi, no recycle content)</option>
+                                            <option value="3">Type I (101-25, 10psi, up to 25% recycle content)</option>
+                                            <option value="4">Type VIII (121-00, 13psi, no recycle content)</option>
+                                            <option value="5">Type VIII (121-15, 130psi, up to 15% recycle content)
+                                            </option>
+                                            <option value="6">Type II (151-00, 15psi, no recycle content)</option>
+                                            <option value="7">Type II (151-15, 15psi, up to 15% recycle content)
+                                            </option>
+                                            <option value="8">Type IX (201-00, 25psi, no recycle content)</option>
+                                            <option value="8">Type IX (201-15, 25psi, up to 15% recycle content)
+                                            </option>
+                                            <option value="8">Type XIV (251-00, 40psi, no recycle content)</option>
+                                            <option value="8">Type XV (351-00, 60psi, no recycle content)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+
+                                    <label class="col-sm-6 col-form-label">Talon Guard</label>
+                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success" required>
+                                            <input type="radio" name="blockSheetTalonGuard" id="blockSheetTalonGuardYes"
+                                                autocomplete="off" checked> Yes
+                                        </label>
+                                        <label class="btn btn-danger active">
+                                            <input type="radio" name="blockSheetTalonGuard" id="blockSheetTalonGuardNo"
+                                                autocomplete="off"> No
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="blockSheetThickness">Thickness</label>
+                                    <input type="number" class="form-control form-control-sm" id="blockSheetThickness"
+                                        min="0.01875" max="37"
+                                        placeholder="Thickness (0.1875&quot; to 37&quot; untrimmed)" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="blockSheetWidth">Width</label>
+                                    <input type="number" class="form-control form-control-sm" id="blockSheetWidth"
+                                        min="1" max="49" placeholder="Width (1&quot; to 49&quot; untrimmed)" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="geoLength">Length</label>
+                                    <input type="number" class="form-control form-control-sm" id="blockSheetLength"
+                                        min="1" max="196" placeholder="Length (1&quot; to 196&quot; untrimmed)"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="from-group col-4">
+                                    <label class="sr-only" for="blockSheetQuantity">Quantity in pieces</label>
+                                    <input type="number" class="form-control form-control-sm" id="blockSheetQuantity"
+                                        min="1" placeholder="Quantity in pieces" required>
+                                </div>
+                                <p>This product is packaged in units of <span>36/geoThickness</span>.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Block custom Size Modal end-->
     <!-- Tab style -->
     <!-- <div class="row row-content">
         <div class="col">
@@ -688,6 +803,8 @@
             </div>
         </div>
     </div> -->
+
+
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
