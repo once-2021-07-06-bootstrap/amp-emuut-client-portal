@@ -573,20 +573,61 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="geofoamForm">
-                            <div class="form-grouip row">
-                                <label class="col-sm-6 col-form-label">Density</label>
-                                <div class="col">
-                                    <select name="geoDensity" class="form-control" id="geoDensity">
-                                        <option selected>Choose your density, Luke.</option>
-                                        <option value="12">EPS 12 (073-00, 1% Compression = 2.2)</option>
-                                        <option value="15">EPS 15 (103-00, 1% Compression = 3.6)</option>
-                                        <option value="19">EPS 19 (123-00, 1% Compression = 5.8)</option>
-                                        <option value="22">EPS 22 (153-00, 1% Compression = 7.3)</option>
-                                        <option value="29">EPS 29 (203-00, 1% Compression = 10.9)</option>
-                                        <option value="39">EPS 39 (303-00, 1% Compression = 15.0)</option>
-                                        <option value="46">EPS 46 (351-00, 1% Compression = 18.6)</option>
-                                    </select>
+                            <div class="form-row">
+                                <div class="form-group row">
+                                    <label class="sr-only">Density</label>
+                                    <div class="col">
+                                        <select name="geoDensity" class="form-control" id="geoDensity" required>
+                                            <option selected>Choose your density, Luke.</option>
+                                            <option value="12">EPS 12 (073-00, 1% Compression = 2.2)</option>
+                                            <option value="15">EPS 15 (103-00, 1% Compression = 3.6)</option>
+                                            <option value="19">EPS 19 (123-00, 1% Compression = 5.8)</option>
+                                            <option value="22">EPS 22 (153-00, 1% Compression = 7.3)</option>
+                                            <option value="29">EPS 29 (203-00, 1% Compression = 10.9)</option>
+                                            <option value="39">EPS 39 (303-00, 1% Compression = 15.0)</option>
+                                            <option value="46">EPS 46 (351-00, 1% Compression = 18.6)</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-6 col-form-label">Talon Guard</label>
+                                    <div class="col-4 btn-group btn-group-toggle" data-toggle="buttons">
+                                        <label class="btn btn-success" required>
+                                            <input type="radio" name="geoTalonGuard" id="geoTalonGuardYes"
+                                                autocomplete="off" checked> Yes
+                                        </label>
+                                        <label class="btn btn-danger active">
+                                            <input type="radio" name="geoTalonGuard" id="geoTalonGuardNo"
+                                                autocomplete="off"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="geoThickness">Thickness</label>
+                                    <input type="number" class="form-control form-control-sm" id="geoThickness"
+                                        min="0.5" max="37" placeholder="Thickness (0.5&quot; to 37&quot; untrimmed)" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="geoWidth">Width</label>
+                                    <input type="number" class="form-control form-control-sm" id="geoWidth" min="1"
+                                        max="49" placeholder="Width (1&quot; to 49&quot; untrimmed)" required>
+                                </div>
+                                <div class="form-group col-4">
+                                    <label class="sr-only" for="geoLength">Length</label>
+                                    <input type="number" class="form-control form-control-sm" id="geoLength" min="1"
+                                        max="196" placeholder="Length (1&quot; to 196&quot; untrimmed)" required>
+                                </div>
+                                <p><small>Note: The most common size for Geofoam block is 37" x 49" x 97",
+                                        untrimmed.</small></p>
+                            </div>
+                            <div class="form-row">
+                                <div class="from-group col-4">
+                                    <label class="sr-only" for="geoQuantity">Quantity in pieces</label>
+                                    <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1" placeholder="Quantity in pieces" required>
+                                </div>
+                                <p>This product is packaged in units of <span>36/geoThickness</span>.</p>
                             </div>
                         </form>
                     </div>
