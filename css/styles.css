@@ -86,5 +86,12 @@ header h2{
 
   .modal-title {
     font-size: 36px;
+  }
 
+.picBox {
+  display: flex;
+}
+
+  .picTitle {
+    flex-direction: column;
   }
