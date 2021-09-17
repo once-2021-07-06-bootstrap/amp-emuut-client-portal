@@ -711,19 +711,47 @@
                         </li>
                         <!-- Block/Sheet custom size trigger-->
                         <li class="dropdown-submenu">
-                        <li class="dropdown-item" tabindex="-1" href="#" data-toggle="modal"
-                            data-target="#blockCustomModal">Custom Block / Sheet Sizes</li>
+                        <li class="dropdown-item"><a tabindex="-1" href="#" data-toggle="modal"
+                                data-target="#blockCustomModal">Custom Block / Sheet Sizes</a></li>
                 </li>
             </ul>
             </li>
             <!-- Geofoam Modal Trigger-->
             <li class="dropdown-submenu">
-            <li class="dropdown-item" tabindex="-1" href="#" data-toggle="modal" data-target="
-                        #geofoamModal">Geofoam Lightweight Fill</li>
+            <li class="dropdown-item"><a tabindex="-1" href="#" data-toggle="modal" data-target="
+                        #geofoamModal">Geofoam Lightweight Fill</a></li>
             </li>
             </ul>
         </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="loosefillDropdownMenu"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loose Fill</button>
+            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdown-submenu">
+                <li class="dropdown-item">
+                    <a tabindex="-1" href="#">Biodegradable Loose Fill "Bio Peanuts"</a>
+                </li>
+                <li class="dropdown-submenu">
+                    <a class="dropdown-item" tabindex="-1" href="#">Loose Bead</a>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-menu">
+                        <li class="dropdown-item"><a tabindex="-1" href="#">Type XI (071-00) Loose Bead</a></li>
+                        <li class="dropdown-item"><a tabindex="-1" href="#">Type I (101-00) Loose Bead</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" id="customSearchBtn">Custom Search</button>
+        </div>
     </div>
+
+
+
+
+
+
+
+
+    
 
     <!-- Start EPIBBLW0.50-25N_01 Modal -->
     <div id="EPIBBLW0-50-25N_01Modal" class="modal fade" role="dialog">
@@ -731,6 +759,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW0.50-25N_01 (201-00-T2) 0.5X48X96 IB_BLWNFP_25_R2.2</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -744,6 +773,14 @@
                                         id="EPIBBLW0-50-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -764,6 +801,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW0.75-25N_01 (201-00-T2) 0.75X48X96 IB_BLWNFP_25_R3.3</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -777,6 +815,14 @@
                                         id="EPIBBLW0-75-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -797,6 +843,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW1.00-25N_01 (201-00-T2) 1X48X96 IB_BLWNFP_25_R4.4</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -810,6 +857,14 @@
                                         id="EPIBBLW1-00-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -830,6 +885,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW1.19-25N_01 (201-00-T2) 1.188X48X96 IB_BLWNFP_25_R5.2</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -843,6 +899,14 @@
                                         id="EPIBBLW1-19-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -862,6 +926,7 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
+                    <label>Below Grade</label>
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
                     <div class="modal-title">EPIBBLW1.50-25N_01 (201-00-T2) 1.5X48X96 IB_BLWNFP_25_R6.6</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -876,6 +941,14 @@
                                         id="EPIBBLW1-50-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -896,6 +969,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW2.00-25N_01 (201-00-T2) 2.2X48X96 IB_BLWNFP_25_ R10</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -909,6 +983,14 @@
                                         id="EPIBBLW2-00-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -929,6 +1011,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW2.20-25N_01 (201-00-T2) 2.2X48X96 IB_BLWNFP_25_ R10</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -942,6 +1025,14 @@
                                         id="EPIBBLW2-20-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -962,6 +1053,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW2.38-25N_01 (201-00-T2) 2.5X48X96 IB_BLWNFP_25_R11</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -975,6 +1067,14 @@
                                         id="EPIBBLW2-38-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -995,6 +1095,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW2.50-25N_01 (201-00-T2) 2.5X48X96 IB_BLWNFP_25_R11</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1008,6 +1109,14 @@
                                         id="EPIBBLW2-50-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1028,6 +1137,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW3.00-25N_01 (201-00-T2) 3X48X96 IB_BLWNFP_25_R13.2</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1041,6 +1151,14 @@
                                         id="EPIBBLW3-00-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1061,6 +1179,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW4.00-25N_01 (201-00-T2) 4X48X96 IB_BLWNFP_25_R17.6</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1074,6 +1193,14 @@
                                         id="EPIBBLW4-00-25N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1094,6 +1221,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW0.50-40N_01 (251-00-T2) 0.5X48X96 IB_BLWNFP_40_R2.2</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1107,6 +1235,14 @@
                                         id="EPIBBLW0-50-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1127,6 +1263,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW0.75-40N_01 (251-00-T2) 0.75X48X96 IB_BLWNFP_40_R3.3</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1140,6 +1277,14 @@
                                         id="EPIBBLW0-75-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1160,6 +1305,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW1.00-40N_01 (251-00-T2) 1X48X96 IB_BLWNFP_40_R4.4</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1173,6 +1319,14 @@
                                         id="EPIBBLW1-00-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1193,6 +1347,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW1.19-40N_01 (251-00-T2) 1.188X48X96 IB_BLWNFP_40_R5.2</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1206,6 +1361,14 @@
                                         id="EPIBBLW1-19-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1226,6 +1389,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW1.50-40N_01 (251-00-T2) 1.5X48X96 IB_BLWNFP_40_R6.6</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1239,6 +1403,14 @@
                                         id="EPIBBLW1-50-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1259,6 +1431,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title">EPIBBLW2.00-40N_01 (251-00-T2) 2X48X96 IB_BLWNFP_40_R8.8</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1272,6 +1445,14 @@
                                         id="EPIBBLW2-00-40N_01Quantity" min="1" placeholder="Quantity in pieces"
                                         required>
                                 </div>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1292,21 +1473,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW2.20-40N_01 (251-00-T2) 2.2X48X96 IB_BLWNFP_40_ R10</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XIV - 2.2"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW2-20-40N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW2-20-40N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW2-20-40N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW2.20-40N_01</label>
+                                <label class="col-4">251-00-T2</label>
+                                <label class="col">40 / R10</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW2-20-40N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW2-20-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 16 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1325,21 +1521,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW2.38-40N_01 (251-00-T2) 2.375X48X96 IB_BLWNFP_40_R10.5</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XIV - 2.375"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW2-38-40N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW2-38-40N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW2-38-40N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW2.38-40N_01</label>
+                                <label class="col-4">251-00-T2</label>
+                                <label class="col">40 / R10.5</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW2-38-40N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW2-38-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1358,21 +1569,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW2.50-40N_01 (251-00-T2) 2.5X48X96 IB_BLWNFP_40_R11</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XIV - 2.5"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW2-50-40N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW2-50-40N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW2-50-40N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW2.50-40N_01</label>
+                                <label class="col-4">251-00-T2</label>
+                                <label class="col">40 / R11</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW2-50-40N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW2-50-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1391,21 +1617,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW3.00-40N_01 (251-00-T2) 3X48X96 IB_BLWNFP_40_R13.2</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XIV - 3"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW3-00-40N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW3-00-40N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW3-00-40N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW3.00-40N_01</label>
+                                <label class="col-4">251-00-T2</label>
+                                <label class="col">40 / R13.2</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW3-00-40N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW3-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 12 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1424,19 +1665,34 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW4.00-40N_01 (251-00-T2) 4X48X96 IB_BLWNFP_40_R17.6</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XIV - 4"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW4-00-40N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW4-00-40N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW4-00-40N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW4.00-40N_01</label>
+                                <label class="col-4">251-00-T2</label>
+                                <label class="col">40 / R17.6</label>
+                            </div>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW4-00-40N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW4-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1457,21 +1713,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW0.50-60N_01 (351-00-T2) 0.5X48X96 IB_BLWNFP_60_R2.3</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 0.5"xx48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW0-50-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW0-50-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW0-50-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW0.50-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R2.3</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW0-50-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW0-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 64 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1490,21 +1761,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW0.75-60N_01 (351-00-T2) 0.75X48X96 IB_BLWNFP_60_R3.4</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 0.75"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW0-75-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW0-75-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW0-75-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW0.75-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R3.4</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW0-75-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW0-75-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 48 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1523,21 +1809,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW1.00-60N_01 (351-00-T2) 1X48X96 IB_BLWNFP_60_R4.5</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 1"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW1-00-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW1-00-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW1-00-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW1.00-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R4.5</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW1-00-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW1-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 36 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1556,21 +1857,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW1.19-60N_01 (351-00-T2) 1.188X48X96 IB_BLWNFP_60_R5.3</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 1.188"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW1-19-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW1-19-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW1-19-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW1.19-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R5.3</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW1-19-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW1-19-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 28 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1589,21 +1905,35 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW1.50-60N_01 (351-00-T2) 1.5X48X96 IB_BLWNFP_60_R6.8</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 1.5"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW1-50-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW1-50-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW1-50-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW1.50-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R6.8</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW1-50-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW1-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 24 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1622,21 +1952,36 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
-                    <div class="modal-title">EPIBBLW2.00-60N_01 (351-00-T2) 2.2X48X96 IB_BLWNFP_60_ R10</div>
+                    <label>Below Grade</label>
+                    <div class="modal-title mx-auto">Type XV - 2"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <form id="EPIBBLW2-00-60N_01Form">
                             <div class="form-row">
-                                <div class="form-group row">
-                                    <label class="sr-only" for="EPIBBLW2-00-60N_01Quantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm"
-                                        id="EPIBBLW2-00-60N_01Quantity" min="1" placeholder="Quantity in pieces"
-                                        required>
-                                </div>
+                                <label class="col-4">Product #</label>
+                                <label class="col-4">Foam Density</label>
+                                <label class="col">psi / R-Value</label>
+                                <label class="col-4">EPIBBLW2.00-60N_01</label>
+                                <label class="col-4">351-00-T2</label>
+                                <label class="col">60 / R10</label>
                             </div>
-                            <label class="col-6">This product is packaged in units of 9 pieces each.</label>
+                            <div class="form-group row">
+                                <label class="sr-only" for="EPIBBLW2-00-60N_01Quantity">Quantity in pieces</label>
+                                <input type="number" class="form-control form-control-sm"
+                                    id="EPIBBLW2-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 18 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1655,6 +2000,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title mx-auto">Type XV - 2.2"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1674,16 +2020,24 @@
                                 <input type="number" class="form-control form-control-sm"
                                     id="EPIBBLW2-20-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
                             </div>
-                    <label class="col-6">This product is packaged in units of 16 pieces each.</label>
-                    <div class="form-group row">
-                        <input type="submit" value="Submit">
-                        <input type="reset">
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 16 pieces each.</label>
+                            <div class="form-group row">
+                                <input type="submit" value="Submit">
+                                <input type="reset">
+                            </div>
+                        </form>
                     </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- End -->
 
@@ -1693,6 +2047,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title mx-auto">Type XV - 2.375"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1712,7 +2067,14 @@
                                 <input type="number" class="form-control form-control-sm"
                                     id="EPIBBLW2-38-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
                             </div>
-
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
@@ -1732,6 +2094,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title mx-auto">Type XV - 2.5"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1751,7 +2114,14 @@
                                 <input type="number" class="form-control form-control-sm"
                                     id="EPIBBLW2-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
                             </div>
-
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
@@ -1771,6 +2141,7 @@
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
                     <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                    <label>Below Grade</label>
                     <div class="modal-title mx-auto">Type XIV - 3"x48"x96"
                     </div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -1791,6 +2162,14 @@
                                 <input type="number" class="form-control form-control-sm"
                                     id="EPIBBLW3-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
                             <label class="col-6">This product is packaged in units of 12 pieces each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
@@ -1809,7 +2188,8 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-info text-white align-items-center">
-                    <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                            <img src="img/below-grade-square-crop.jpg" class="img-fluid thumbnail" />
+                            <label>Below Grade</label>
                     <div class="modal-title mx-auto">Type XV - 4"x48"x96"</div>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
@@ -1826,8 +2206,16 @@
                             </div>
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW4-00-60N_01Quantity">Quantity in pieces</label>
-                                <input type="number" class="form-control form-control-sm col-6"
+                                <input type="number" class="form-control form-control-sm col-3"
                                     id="EPIBBLW4-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1862,6 +2250,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1893,6 +2290,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1924,6 +2330,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1955,6 +2370,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -1986,6 +2410,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2017,6 +2450,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2048,6 +2490,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2079,6 +2530,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2111,6 +2571,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2143,6 +2612,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2175,6 +2653,15 @@
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2231,6 +2718,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="form-row">
                                 <div class="form-group col-4">
                                     <label class="sr-only" for="geoThickness">Thickness</label>
@@ -2257,8 +2745,17 @@
                                     <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1"
                                         placeholder="Quantity in pieces" required>
                                 </div>
-                                <p>This product is packaged in units of <span>36/geoThickness</span>.</p>
+
                             </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
                             <div class="form-group row">
                                 <input type="submit" value="Submit">
                                 <input type="reset">
@@ -2341,12 +2838,25 @@
                                 </div>
                             </div>
                             <div class="form-row">
-                                <div class="from-group col-4">
+                                <div class="form-group col-4">
                                     <label class="sr-only" for="blockSheetQuantity">Quantity in pieces</label>
                                     <input type="number" class="form-control form-control-sm" id="blockSheetQuantity"
                                         min="1" placeholder="Quantity in pieces" required>
                                 </div>
-                                <p>This product is packaged in units of <span>36/geoThickness</span>.</p>
+
+                            </div>
+                            <div class="form-row">
+                                <label class="col-4">Price Per Piece</label>
+                                <label class="col-4">Number of Units</label>
+                                <label class="col-4">Subtotal Per Item</label>
+                                <label class="col-4">$<span>priceVar</span></label>
+                                <label class="col-4"><span>unitsVar</span></label>
+                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                            </div>
+                            <label class="col-6">This product is packaged in units of 1 piece each.</label>
+                            <div class="form-group row">
+                                <input type="submit" value="Submit">
+                                <input type="reset">
                             </div>
                         </form>
                     </div>
