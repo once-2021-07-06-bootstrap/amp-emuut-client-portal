@@ -21,27 +21,34 @@
 <header>
     <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="img/Atlas Logo 02.png" /> AMP Atlas Molded Products</a>
-
-            <div class="collapse navbar-collapse" id="#atlasmoldedProductsNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>
-                            Products</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link active" href="Order.html"><i
-                                class="fa fa-info fa-lg"></i>Order
-                            Products</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link " href="Contact.html"><i
-                                class="fa fa-address-card fa-lg"></i>
-                            Contact Us</a></li>
+            <div class="row">
+                <a class="navbar-brand" href="#"><img src="img/Atlas Logo 02.png" /> AMP - Murray, UT (EMUUT)</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#atlasmoldedProductsNavbar">
+                    <span class="navbar-toggler-icon"></span>
                     <span class="navbar-text ml-auto">
                         <a role="button" id="loginButton">
-                            <i class="fa fa-sign-in"></i>Login</a>
+                            <i class="fa fa-sign-in"></i> Login
+                        </a>
                     </span>
-                </ul>
+                </button>
+                <div class="collapse navbar-collapse" id="#atlasmoldedProductsNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i>
+                                Products</a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="Order.html"><i
+                                    class="fa fa-info fa-lg"></i>Order
+                                Products</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html"><i
+                                    class="fa fa-address-card fa-lg"></i>
+                                Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+
     </nav>
 </header>
 
@@ -743,7 +750,9 @@
             <button class="btn btn-secondary" type="button" id="customSearchBtn">Custom Search</button>
         </div>
     </div>
-
+<main>
+    <img src="img/I-15 Cooridor 1-14-10.jpg"  class="img-fluid" alt="Interstate 15 Corridor"/>
+</main>
 
 
 
@@ -781,16 +790,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-50-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-50-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-50-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 64 pieces each.</label>
                             <div class="form-group row">
@@ -833,16 +843,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-75-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-75-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-75-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 48 pieces each.</label>
                             <div class="form-group row">
@@ -885,16 +896,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-00-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-00-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-00-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 36 pieces each.</label>
                             <div class="form-group row">
@@ -937,16 +949,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-19-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-19-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-19-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 28 pieces each.</label>
                             <div class="form-group row">
@@ -989,16 +1002,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-50-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-50-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-50-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 24 pieces each.</label>
                             <div class="form-group row">
@@ -1041,16 +1055,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-00-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-00-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-00-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 18 pieces each.</label>
                             <div class="form-group row">
@@ -1093,16 +1108,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-20-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-20-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-20-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 16 pieces each.</label>
                             <div class="form-group row">
@@ -1145,16 +1161,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-38-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-38-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-38-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -1197,16 +1214,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-50-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-50-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-50-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -1249,16 +1267,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW3-00-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW3-00-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW3-00-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 12 pieces each.</label>
                             <div class="form-group row">
@@ -1301,16 +1320,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW4-00-25N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW4-00-25N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW4-00-25N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1353,16 +1373,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-50-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-50-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-50-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 64 pieces each.</label>
                             <div class="form-group row">
@@ -1405,16 +1426,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-75-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-75-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-75-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 48 pieces each.</label>
                             <div class="form-group row">
@@ -1457,16 +1479,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-00-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-00-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 36 pieces each.</label>
                             <div class="form-group row">
@@ -1509,16 +1532,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-19-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-19-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-19-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 28 pieces each.</label>
                             <div class="form-group row">
@@ -1561,16 +1585,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-50-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-50-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-50-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 24 pieces each.</label>
                             <div class="form-group row">
@@ -1613,15 +1638,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-00-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-00-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 18 pieces each.</label>
                             <div class="form-group row">
@@ -1664,15 +1691,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-20-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-20-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-20-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 16 pieces each.</label>
                             <div class="form-group row">
@@ -1715,16 +1744,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-38-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-38-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-38-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
-
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -1767,16 +1797,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-50-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-50-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-50-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -1819,16 +1851,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW3-00-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW3-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW3-00-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 12 pieces each.</label>
                             <div class="form-group row">
@@ -1871,16 +1905,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW4-00-40N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW4-00-40N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW4-00-40N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -1923,16 +1959,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-50-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-50-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 64 pieces each.</label>
                             <div class="form-group row">
@@ -1975,16 +2013,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW0-75-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW0-75-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW0-75-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 48 pieces each.</label>
                             <div class="form-group row">
@@ -2027,16 +2067,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-00-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-00-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 36 pieces each.</label>
                             <div class="form-group row">
@@ -2079,16 +2121,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-19-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-19-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-19-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 28 pieces each.</label>
                             <div class="form-group row">
@@ -2131,15 +2175,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW1-50-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW1-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW1-50-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 24 pieces each.</label>
                             <div class="form-group row">
@@ -2182,16 +2228,18 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-00-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-00-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 18 pieces each.</label>
                             <div class="form-group row">
@@ -2234,15 +2282,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-20-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-20-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-20-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 16 pieces each.</label>
                             <div class="form-group row">
@@ -2285,15 +2335,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2.38-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-38-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-38-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -2336,15 +2388,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW2-50-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW2-50-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW2-50-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 14 pieces each.</label>
                             <div class="form-group row">
@@ -2388,15 +2442,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW3-00-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm"
-                                    id="EPIBBLW3-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW3-00-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 12 pieces each.</label>
                             <div class="form-group row">
@@ -2439,15 +2495,17 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="EPIBBLW4-00-60N_01Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm col-3"
-                                    id="EPIBBLW4-00-60N_01Quantity" min="1" placeholder="Quantity in pieces" required>
+                                    id="EPIBBLW4-00-60N_01Quantity" min="0" placeholder="Quantity in pieces" required>
                             </div>
                             <div class="form-row">
-                                <label class="col-4">Price Per Piece</label>
-                                <label class="col-4">Number of Units</label>
-                                <label class="col-4">Subtotal Per Item</label>
-                                <label class="col-4">$<span>priceVar</span></label>
-                                <label class="col-4"><span>unitsVar</span></label>
-                                <label class="col-4">$<span>subtotalPriceVar</span></label>
+                                <label class="col-3">Price/Piece</label>
+                                <label class="col-3">Units</label>
+                                <label class="col-3">Adjusted Piece Count</label>
+                                <label class="col-3">Subtotal Per Item</label>
+                                <label class="col-3">$<span>priceVar</span></label>
+                                <label class="col-3"><span>unitsVar</span></label>
+                                <label class="col-3"><span>adjPieceCountVar</span></label>
+                                <label class="col-3">$<span>subtotalPriceVar</span></label>
                             </div>
                             <label class="col-6">This product is packaged in units of 9 pieces each.</label>
                             <div class="form-group row">
@@ -2492,7 +2550,7 @@
                                 <div class="form-group row">
                                     <label class="sr-only" for="block071-00Quantity">Quantity in pieces</label>
                                     <input type="number" class="form-control form-control-sm" id="block071-00Quantity"
-                                        min="1" placeholder="Quantity in pieces" required>
+                                        min="0" placeholder="Quantity in pieces" required>
                                 </div>
                             </div>
                             <div class="form-row">
@@ -2544,7 +2602,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block101-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block101-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2596,7 +2654,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block101-25Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block101-25Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2648,7 +2706,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block121-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block121-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2700,7 +2758,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block121-15Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block121-15Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2752,7 +2810,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block151-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block151-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2804,7 +2862,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block151-15Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block151-15Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2856,7 +2914,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block201-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block201-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2909,7 +2967,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block201-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block201-15Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -2962,7 +3020,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block251-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block251-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -3015,7 +3073,7 @@
                             <div class="form-group row">
                                 <label class="sr-only" for="block351-00Quantity">Quantity in pieces</label>
                                 <input type="number" class="form-control form-control-sm" id="block351-00Quantity"
-                                    min="1" placeholder="Quantity in pieces" required>
+                                    min="0" placeholder="Quantity in pieces" required>
                             </div>
 
                             <div class="form-row">
@@ -3107,7 +3165,7 @@
                             <div class="form-row">
                                 <div class="from-group col-4">
                                     <label class="sr-only" for="geoQuantity">Quantity in pieces</label>
-                                    <input type="number" class="form-control form-control-sm" id="geoQuantity" min="1"
+                                    <input type="number" class="form-control form-control-sm" id="geoQuantity" min="0"
                                         placeholder="Quantity in pieces" required>
                                 </div>
 
@@ -3207,7 +3265,7 @@
                                 <div class="form-group col-4">
                                     <label class="sr-only" for="blockSheetQuantity">Quantity in pieces</label>
                                     <input type="number" class="form-control form-control-sm" id="blockSheetQuantity"
-                                        min="1" placeholder="Quantity in pieces" required>
+                                        min="0" placeholder="Quantity in pieces" required>
                                 </div>
 
                             </div>
@@ -3283,7 +3341,41 @@
             </div>
         </div>
     </div> -->
-
+    <footer class="site footer bg-light p-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Products</a></li>
+                        <li><a href="Order.html">Order Products</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fa fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/AtlasMoldedProducts"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google"
+                        href="https://www.youtube.com/channel/UCh8kLmWSP5xkd7beCrxGtPw"><i
+                            class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin"
+                        href="https://www.linkedin.com/showcase/atlas-molded-products/"><i
+                            class="fa fa-linkedin"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <a role="button" class="btn btn-link" href="tel:+18012653465"><i class="fa fa-phone"></i>
+                        1-801-265-3465</a><br />
+                        <a role="button" class="btn btn-link" href="pomurray@atlasroofing.com"><i class="fa fa-envelope-o"></i>
+                            pomurray@atlasroofing.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <!-- build:js js/main.js -->

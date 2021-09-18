@@ -72,6 +72,11 @@ header h2{
   width: 100px;
 }
 
+.thumbnail2 {
+  height: 40px;
+  width: 100px;
+}
+
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5); }
 
